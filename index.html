@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="陈能智 - 3年Java后端开发经验，专注于微服务架构、Spring Cloud、分布式系统开发">
     <meta name="theme-color" content="#165DFF">
+    <script>
+        // 提前设置主题，避免加载时闪白
+        (function () {
+            var t = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
     <title>陈能智 · 个人简历 | Java后端开发</title>
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
@@ -18,7 +26,6 @@
 <body>
     <!-- 背景装饰层 -->
     <div class="bg-decor" aria-hidden="true">
-        <canvas id="particleCanvas"></canvas>
         <div class="circuit-lines">
             <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
                 <defs>
